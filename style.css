@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fdfdfd;
+}
+
+/* 顶部横幅样式 */
+.hero {
+    background-image: url('hero.png');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+.hero-content {
+    text-align: center;
+}
+.hero h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+.hero p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+/* 导航栏样式 */
+nav {
+    background-color: #0d6efd;
+    padding: 10px 0;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    margin: 0 20px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* 页面板块样式 */
+section {
+    padding: 40px 20px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+section h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    text-align: center;
+    color: #0d6efd;
+}
+.service {
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.service h3 {
+    margin-top: 0;
+    color: #0d6efd;
+}
+.service p {
+    margin: 10px 0 0 0;
+}
+
+/* 页脚样式 */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    font-size: 14px;
+    color: #888;
+}
+
+/* 响应式布局 */
+@media (min-width: 768px) {
+    .service {
+        display: inline-block;
+        width: 30%;
+        margin-right: 3.333%;
+        vertical-align: top;
+    }
+    .service:last-child {
+        margin-right: 0;
+    }
+}
